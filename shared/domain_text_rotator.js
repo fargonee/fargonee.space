@@ -13,7 +13,7 @@ const domains_uz = [
   "Elektronika",
   "Innovatsiya",
   "Veb ishlab chiqarish",
-  "AI",
+  "Sun'iy intellekt",
   "Avtomatlashtirish",
   "Mikroxizmatlar",
 ];

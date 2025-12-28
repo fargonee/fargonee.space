@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FarGoneE | IT Xizmatlari</title>
+    <title>
+      FarGoneE | Ta'lim, Elektronika, Web Ishlab chiqarish, Avtomatlashtirish
+    </title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,13 +24,15 @@
     <nav class="nav">
       <div class="nav-container">
         <a href="#" class="logo"> <span>FarGone</span><span>E</span> </a>
-        <a href="/index.html" class="nav-link">🇬🇧 English</a>
+        <a href="/uz/index.html" class="nav-link">🇬🇧 English</a>
         <div class="nav-links">
           <a href="#problem" class="nav-link">Muammo</a>
           <a href="#solution" class="nav-link">Yechim</a>
           <a href="#process" class="nav-link">Jarayon</a>
           <a href="#why" class="nav-link">Nega biz?</a>
-          <a href="#consultation" class="btn btn-primary">Start Audit</a>
+          <a href="#consultation" class="btn btn-primary"
+            >Konsultatsiyaga o'tish</a
+          >
         </div>
       </div>
     </nav>
@@ -36,21 +41,42 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content fade-in">
-          <h1>Systems that work<br />while you don't.</h1>
+          <h1>Turli sohalar bo‘yicha innovatsion IT yechimlar</h1>
           <p class="lead">
-            FarGoneE engineers automated pipelines that capture, qualify, and
-            convert leads—<span class="mono"
-              >from first impression to first sale</span
-            >, with minimal human intervention.
+            FarGoneE
+            <span class="mono" id="domain-text">Ta’lim</span>
+            sohasidan boshlab turli yo‘nalishlar uchun ishonchli tizimlar va
+            aqlli avtomatlashtirish yechimlarini real biznes ta’siri uchun
+            yuqori aniqlik bilan ishlab chiqadi.
           </p>
           <div class="hero-cta">
             <a href="#consultation" class="btn btn-primary"
-              >Start Automation Audit</a
+              >Texnik konsultatsiyani boshlash</a
             >
             <a href="#process" class="btn btn-secondary"
-              >View System Architecture</a
+              >Yechimlarimizni ko‘rish</a
             >
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Branches Section -->
+    <section id="branches" class="branches">
+      <div class="container">
+        <h2 class="section-title">Yo‘nalishlar bo‘yicha tajribamiz</h2>
+        <p class="lead">
+          FarGoneE faqat avtomatlashtirish bilan cheklanmaydi. Biz bir nechta IT
+          yo‘nalishlarida innovatsion yechimlar ishlab chiqamiz:
+        </p>
+        <div class="branches-grid fade-in">
+          <div class="branch-card">Ta’lim</div>
+          <div class="branch-card">Elektronika</div>
+          <div class="branch-card">Muhandislik</div>
+          <div class="branch-card">Veb dasturlash</div>
+          <div class="branch-card">Sun’iy intellekt</div>
+          <div class="branch-card">Avtomatlashtirish</div>
+          <div class="branch-card">Mikroxizmatlar</div>
         </div>
       </div>
     </section>
@@ -58,10 +84,13 @@
     <!-- Problem Section -->
     <section id="problem" class="problem">
       <div class="container">
-        <h2 class="section-title">Manual Operations Don't Scale</h2>
+        <h2 class="section-title">
+          Qo‘lda bajariladigan jarayonlar va bo‘lingan tizimlar o‘sishni
+          cheklaydi
+        </h2>
         <p class="lead">
-          Disconnected tools and human bottlenecks create friction that limits
-          growth.
+          Aloqasi uzilgan vositalar, eskirgan ish jarayonlari va insoniy
+          tıxnalishlar innovatsiya va operatsion samaradorlikni sekinlashtiradi.
         </p>
 
         <div class="problem-grid">
@@ -79,10 +108,11 @@
                 />
               </svg>
             </div>
-            <h3>Disconnected Tools</h3>
+            <h3>Aloqasi uzilgan vositalar</h3>
             <p>
-              Platforms that don't communicate create data silos. Information
-              gets trapped, forcing manual transfers between systems.
+              Bir-biri bilan bog‘lanmaydigan platformalar ma’lumotlarni
+              silolarda qoldiradi. Axborot o‘tkazilmay qoladi va tizimlar
+              o‘rtasida qo‘lda ko‘chirishga majbur qiladi.
             </p>
           </div>
 
@@ -98,11 +128,11 @@
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
               </svg>
             </div>
-            <h3>Lost Intelligence</h3>
+            <h3>Yo‘qolgan ma’lumotlar</h3>
             <p>
-              Valuable lead context disappears between handoffs. Without
-              complete data, opportunities are missed and decisions become
-              guesses.
+              Qimmatli mijoz konteksti uzatilish jarayonida yo‘qoladi. To‘liq
+              ma’lumotlar bo‘lmasa, imkoniyatlar qo‘ldan chiqadi va qarorlar
+              taxminlarga aylanadi.
             </p>
           </div>
 
@@ -120,10 +150,11 @@
                 />
               </svg>
             </div>
-            <h3>Human Bottlenecks</h3>
+            <h3>Inson omili</h3>
             <p>
-              Your team handles routine tasks that systems should manage. Growth
-              becomes painful as operations don't scale with demand.
+              Jamoangiz tizimlar bajarishi kerak bo‘lgan oddiy vazifalarni
+              bajaradi. Talab oshgani sayin jarayonlar o‘smaydi va rivojlanish
+              qiyinlashadi.
             </p>
           </div>
         </div>
@@ -133,41 +164,46 @@
     <!-- Solution Section -->
     <section id="solution" class="solution">
       <div class="container">
-        <h2 class="section-title">Engineered Automation Pipelines</h2>
+        <h2 class="section-title">
+          IT Yo‘nalishlari bo‘yicha Muhandislik Yechimlari
+        </h2>
         <p class="lead">
-          From advertisement to first sale: one coherent system, built with
-          engineering rigor.
+          Sun’iy intellekt asosidagi tahlildan tortib kengaytiriladigan
+          mikroxizmatlargacha: biz tizimlarni haqiqiy muammolarni hal qiladigan
+          muhandislik aniqchiligi bilan loyihalashtiramiz.
         </p>
-
-        <div class="solution-visual fade-in">
-          <!-- System diagram would be rendered here with JS -->
-        </div>
 
         <div class="solution-highlights">
           <div class="highlight fade-in">
             <div class="highlight-number">01</div>
-            <h3>AI-Assisted Decision Making</h3>
+            <h3>Sun’iy Intellekt va Ma’lumotlar Tahlili</h3>
             <p>
-              Systems that qualify leads with precision, routing them to
-              appropriate conversion paths based on data, not intuition.
+              Ish jarayonlari bo‘ylab natijalarni tahlil qiladigan, oldindan
+              bashorat qiladigan va optimallashtiradigan aqlli tizimlar.
             </p>
           </div>
-
           <div class="highlight fade-in">
             <div class="highlight-number">02</div>
-            <h3>Modular Microservices</h3>
+            <h3>Modulyar Mikroxizmatlar va Veb Yechimlar</h3>
             <p>
-              Independent components that can be upgraded, replaced, or scaled
-              without system-wide disruption. Built for evolution.
+              Biznesingiz bilan rivojlanadigan, moslashuvchan, kengaytiriladigan
+              va texnik xizmat ko‘rsatish uchun qulay arxitekturalar.
             </p>
           </div>
-
           <div class="highlight fade-in">
             <div class="highlight-number">03</div>
-            <h3>Infrastructure Mindset</h3>
+            <h3>Uskuna va Elektronika Integratsiyasi</h3>
             <p>
-              Monitoring, logging, and redundancy are default, not add-ons.
-              Systems engineered for reliability, not marketing demos.
+              Sensorlardan tortib o‘rnatilgan tizimlargacha, biz raqamli va
+              fizik olamni bog‘laymiz.
+            </p>
+          </div>
+          <div class="highlight fade-in">
+            <div class="highlight-number">04</div>
+            <h3>Ta’lim va Bilim Tizimlari</h3>
+            <p>
+              O‘rganish, trening va bilimlarni boshqarishni raqamli tarzda
+              kuchaytiradigan yechimlar.
             </p>
           </div>
         </div>
@@ -177,46 +213,50 @@
     <!-- Process Section -->
     <section id="process" class="process">
       <div class="container">
-        <h2 class="section-title">The Automated Conversion Pipeline</h2>
+        <h2 class="section-title">Avtomatlashtirilgan Konversiya Pipeline’i</h2>
         <p class="lead">
-          Four coordinated steps replace manual workflows with engineered
-          systems.
+          To‘rtta muvofiqlashtirilgan qadam qo‘lda bajariladigan ish
+          jarayonlarini muhandislik tizimlari bilan almashtiradi.
         </p>
 
         <div class="timeline">
           <div class="timeline-step fade-in">
             <div class="step-number">1</div>
-            <h3>Audience & Ad Intelligence</h3>
+            <h3>Auditoriya va Reklama Tahlili</h3>
             <p>
-              Systems analyze market signals and audience behavior to optimize
-              content and placement in real-time.
+              Tizimlar bozor signallarini va auditoriya xatti-harakatlarini
+              tahlil qilib, kontent va joylashtirishni real vaqtda
+              optimallashtiradi.
             </p>
           </div>
 
           <div class="timeline-step fade-in">
             <div class="step-number">2</div>
-            <h3>Automated Lead Capture</h3>
+            <h3>Avtomatlashtirilgan Mijoz Ma’lumotlarini Qabul Qilish</h3>
             <p>
-              Intelligent forms and tracking capture complete context—not just
-              contact information—with zero manual entry.
+              Aqlli formalar va kuzatuv tizimlari faqat kontakt ma’lumotlari
+              emas, balki to‘liq kontekstni ham, qo‘lda kiritishsiz qamrab
+              oladi.
             </p>
           </div>
 
           <div class="timeline-step fade-in">
             <div class="step-number">3</div>
-            <h3>AI Qualification & Routing</h3>
+            <h3>Sun’iy Intellekt Orqali Saralash va Yo‘naltirish</h3>
             <p>
-              Machine learning models score and route leads based on conversion
-              probability and product fit.
+              Mashinani o‘rganish modellari konversiya ehtimoli va mahsulotga
+              moslik asosida mijozlarni baholab, ularni tegishli yo‘nalishga
+              yo‘naltiradi.
             </p>
           </div>
 
           <div class="timeline-step fade-in">
             <div class="step-number">4</div>
-            <h3>Conversion & First Sale</h3>
+            <h3>Konversiya va Birinchi Sotuv</h3>
             <p>
-              Personalized automation sequences guide qualified leads through
-              initial purchase without sales calls.
+              Shaxsiylashtirilgan avtomatlashtirish ketma-ketliklari malakali
+              mijozlarni birinchi xarid orqali, savdo qo‘ng‘iroqlarisiz
+              yo‘naltiradi.
             </p>
           </div>
         </div>
@@ -227,37 +267,39 @@
     <section id="why" class="why">
       <div class="container">
         <h2 class="section-title">
-          Engineering Excellence Over Marketing Hype
+          Marketing g‘oyalaridan ko‘ra Muhandislik Mukammalligi
         </h2>
         <p class="lead">
-          We build systems with the rigor they deserve—because infrastructure
-          shouldn't be an afterthought.
+          Biz tizimlarni ularning munosib bo‘lgan qat’iylik bilan quramiz—chunki
+          infratuzilma ortda qolmasligi kerak.
         </p>
 
         <div class="why-cards">
           <div class="why-card fade-in">
-            <h3>Built Like Infrastructure</h3>
+            <h3>Infratuzilma Qat’iyligida Qurilgan</h3>
             <p>
-              We engineer systems with the same rigor as financial trading
-              platforms or spacecraft control—not landing page builders. Every
-              component is documented, tested, and maintainable.
+              Biz tizimlarni moliyaviy savdo platformalari yoki kosmik apparat
+              boshqaruvi kabi qat’iylik bilan loyihalashtiramiz—faqat landing
+              page yaratuvchilar emas. Har bir komponent hujjatlashtirilgan,
+              sinovdan o‘tkazilgan va texnik xizmat ko‘rsatish uchun qulay.
             </p>
           </div>
 
           <div class="why-card fade-in">
-            <h3>No Templates, No Technical Debt</h3>
+            <h3>Shablonsiz, Texnik Qarzsiz</h3>
             <p>
-              Every system is designed for your specific workflow. We deliver
-              clean architecture, not quick fixes that become tomorrow's
-              problems.
+              Har bir tizim sizning maxsus ish jarayoningiz uchun
+              loyihalashtirilgan. Biz tezkor yechimlar emas, balki toza
+              arxitektura taqdim etamiz, ular ertangi muammolarga aylanishi
+              mumkin emas.
             </p>
           </div>
 
           <div class="why-card fade-in">
-            <h3>Full Transparency</h3>
+            <h3>To‘liq Shaffoflik</h3>
             <p>
-              Access to system diagrams, API documentation, and performance
-              metrics. You own the complete system, not just the output.
+              Tizim diagrammalari, API hujjatlari va ishlash ko‘rsatkichlariga
+              kirish. Siz faqat natijani emas, balki butun tizimni egasiz.
             </p>
           </div>
         </div>
@@ -269,17 +311,21 @@
       <div class="container">
         <div class="fade-in">
           <h2 class="cta-title">
-            Ready to automate what others manually struggle with?
+            Boshqalar qo‘lda kurashayotgan jarayonlarni avtomatlashtirishga
+            tayyormisiz?
           </h2>
           <p class="cta-subtitle">
-            Book a technical consultation. We'll analyze your current workflow
-            and provide a system architecture proposal—no marketing fluff, just
-            engineering assessment.
+            Texnik konsultatsiya uchun ro‘yxatdan o‘ting. Biz sizning joriy ish
+            jarayoningizni tahlil qilamiz va tizim arxitekturasi bo‘yicha taklif
+            beramiz—marketing shov-shuvsiz, faqat muhandislik baholash.
           </p>
           <div class="hero-cta">
             <a href="#" class="btn btn-primary" id="consultation-btn">
-              Book Technical Consultation
+              Texnik Konsultatsiya
             </a>
+            <!-- <a href="#" class="btn btn-secondary"
+              >Request Architecture Sample</a
+            > -->
           </div>
         </div>
       </div>
@@ -290,18 +336,20 @@
       <div class="footer-content">
         <div class="logo"><span>FarGone</span><span>E</span></div>
         <p class="brand-statement">
-          Education · Electronics · Engineering · Excellence
+          Ta’lim · Elektronika · Muhandislik · Veb ishlab chiqish · Sun’iy
+          intellekt · Avtomatlashtirish · Mikroxizmatlar
         </p>
         <p class="copyright">
-          Systems that work. Built with precision.<br />
-          © 2024 FarGoneE. All engineering reserved.
+          Ishonchli IT yechimlari, aniqlik bilan muhandislik qilingan.<br />
+          © 2025 FarGoneE. Barcha muhandislik huquqlari saqlangan.
         </p>
       </div>
     </footer>
 
+    <script src="../shared/detect_language.js" defer></script>
+    <script src="../shared/domain_text_rotator.js" defer></script>
     <script src="../shared/phone_validator.js" defer></script>
     <script src="../shared/animated_background.js" defer></script>
     <script src="../shared/main.js" defer></script>
-
   </body>
 </html>

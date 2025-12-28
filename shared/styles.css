@@ -76,7 +76,20 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 3.5rem;
+  font-size: clamp(2.1rem, 5vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.lead {
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+}
+
+
+
+h1 {
     margin-bottom: 1.5rem;
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
     -webkit-background-clip: text;
@@ -85,7 +98,6 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -118,7 +130,6 @@ h3 {
 }
 
 .lead {
-    font-size: 1.25rem;
     color: var(--text-secondary);
     max-width: 800px;
     margin: 0 auto 2rem;
@@ -128,7 +139,12 @@ h3 {
 .container {
     max-width: var(--container-max);
     margin: 0 auto;
-    padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
 }
 
 section {
@@ -263,8 +279,16 @@ section {
 
 #domain-text {
   display: inline-block;
-  min-width: 16ch; /* width of the longest word */
+  min-width: 20ch;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  #domain-text {
+    min-width: 14ch; /* prevents overflow */
+    display: block;  /* forces clean line break */
+    margin: 0.5rem auto 0;
+  }
 }
 
 
@@ -272,7 +296,19 @@ section {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+  min-height: min(100vh, 900px);
+  padding-top: 7rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.hero {
     display: flex;
     align-items: center;
     padding-top: 6rem;
@@ -329,6 +365,25 @@ section {
   box-shadow: 0 12px 40px rgba(0, 212, 255, 0.3); /* subtle accent glow on hover */
   background: var(--bg-card-hover); /* slightly brighter glass effect */
   border-color: var(--accent-primary);
+}
+
+
+@media (max-width: 600px) {
+  .branches-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .branch-card {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .branches-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -479,7 +534,6 @@ section {
 /* Why Us Section */
 .why-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -644,3 +698,7 @@ section {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+
+
+
