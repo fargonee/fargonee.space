@@ -180,7 +180,12 @@ section {
     text-decoration: none;
     display: flex;
     align-items: center;
-    /* gap: 0.5rem; */
+    
+}
+
+.logo img {
+    width: 2rem;
+    margin-right: 0.5rem;
 }
 
 .logo span:nth-child(2) {
