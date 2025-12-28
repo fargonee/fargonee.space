@@ -6,9 +6,18 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const particles = [];
-const particleCount = 400;
-const connectionDistance = 100;
-const mouse = { x: null, y: null, radius: 150 };
+
+// Dynamic scaling based on canvas size
+const scaleFactor = Math.sqrt(canvas.width * canvas.height) / 100; // tweak divisor for density
+
+const particleCount = Math.floor(scaleFactor * 15); // smooth scaling with area
+const connectionDistance =
+  Math.min(canvas.width, canvas.height) / (2 + scaleFactor / 2); // smaller screens → smaller connections
+const mouse = {
+  x: null,
+  y: null,
+  radius: canvas.width / (6 + scaleFactor / 10), // width-aware mouse radius
+};
 
 class Particle {
   constructor() {
