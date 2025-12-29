@@ -13,8 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../shared/styles.css" />
-    <link rel="stylesheet" href="../shared/modalStyles.css" />
+    <link rel="stylesheet" href="../shared/styles/drawer.css"/>
+    <link rel="stylesheet" href="../shared/styles/main.css" />
+    <link rel="stylesheet" href="../shared/styles/modal.css" />
+
+
     <link rel="icon" href="../global/favicon.png" type="image/svg+xml">
     <link rel="icon" type="image/png" sizes="512x512" href="../global/favicon_512.png">
 
@@ -25,24 +28,40 @@
     <canvas id="particles-canvas"></canvas>
 
     <!-- Navigation -->
-    <nav class="nav">
-      <div class="nav-container">
-        <a href="#" class="logo"> 
-          <img src="/global/favicon.png" alt="FarGoneE Logo">
-          <span>FarGone</span><span>E</span> 
-        </a>
-        <a href="/index.html" class="nav-link">🇬🇧 English</a>
-        <div class="nav-links">
-          <a href="#problem" class="nav-link">Muammo</a>
-          <a href="#solution" class="nav-link">Yechim</a>
-          <a href="#process" class="nav-link">Jarayon</a>
-          <a href="#why" class="nav-link">Nega biz?</a>
-          <a href="#consultation" class="btn btn-primary"
-            >Konsultatsiyaga o'tish</a
-          >
-        </div>
-      </div>
-    </nav>
+<nav class="nav">
+  <div class="nav-container">
+    <a href="/" class="logo">
+      <img src="/global/favicon.png" alt="FarGoneE Logo">
+      <span>FarGone</span><span>E</span>
+    </a>
+
+    <a href="/index.html" class="nav-link lang-switch">🇺🇸 English</a>
+
+    <button class="menu-toggle" aria-label="Open menu">
+      ☰
+    </button>
+
+    <div class="nav-links">
+      <a href="#problem" class="nav-link">Muammo</a>
+      <a href="#solution" class="nav-link">Yechim</a>
+      <a href="#process" class="nav-link">Jarayon</a>
+      <a href="#why" class="nav-link">Nega biz?</a>
+      <a href="#consultation" class="btn btn-primary">Konsultatsiya</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="drawer">
+  <button class="drawer-close" aria-label="Close menu">×</button>
+  <a href="#problem">Muammo</a>
+  <a href="#solution">Yechim</a>
+  <a href="#process">Jarayon</a>
+  <a href="#why">Nega biz?</a>
+</div>
+
+<div class="drawer-backdrop"></div>
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -353,11 +372,13 @@
       </div>
     </footer>
 
-    <script src="../shared/modalStyles.css" defer></script>
-    <script src="../shared/scrollAnimations.js" defer></script>
-    <script src="../shared/detect_language.js" defer></script>
-    <script src="../shared/domain_text_rotator.js" defer></script>
-    <script src="../shared/animated_background.js" defer></script>
-    <script src="../shared/modal.js" defer></script>
+
+    <script src="../shared/js/drawer.js" defer></script>
+    <script src="../shared/styles/modal.css" defer></script>
+    <script src="../shared/js/scrollAnimations.js" defer></script>
+    <script src="../shared/js/detect_language.js" defer></script>
+    <script src="../shared/js/domain_text_rotator.js" defer></script>
+    <script src="../shared/js/animated_background.js" defer></script>
+    <script src="../shared/js/modal.js" defer></script>
   </body>
 </html>

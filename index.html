@@ -13,8 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/shared/styles.css" />
-    <link rel="stylesheet" href="/shared/modalStyles.css" />
+    <link rel="stylesheet" href="/shared/styles/drawer.css" />
+    <link rel="stylesheet" href="/shared/styles/main.css" />
+    <link rel="stylesheet" href="/shared/styles/modal.css" />
+
     
     <link rel="icon" href="/global/favicon.png" type="image/svg+xml">
     <link rel="icon" type="image/png" sizes="512x512" href="/global/favicon_512.png">
@@ -27,22 +29,40 @@
     <canvas id="particles-canvas"></canvas>
 
     <!-- Navigation -->
-    <nav class="nav">
-      <div class="nav-container">
-        <a href="#" class="logo"> 
-          <img src="/global/favicon.png" alt="FarGoneE Logo">
-          <span>FarGone</span><span>E</span> 
-        </a>
-        <a href="/uz/index.html" class="nav-link">🇺🇿 Uzbek</a>
-        <div class="nav-links">
-          <a href="#problem" class="nav-link">Problem</a>
-          <a href="#solution" class="nav-link">Solution</a>
-          <a href="#process" class="nav-link">Process</a>
-          <a href="#why" class="nav-link">Why Us</a>
-          <a href="#consultation" class="btn btn-primary">Start Audit</a>
-        </div>
-      </div>
-    </nav>
+<nav class="nav">
+  <div class="nav-container">
+    <a href="/" class="logo">
+      <img src="/global/favicon.png" alt="FarGoneE Logo">
+      <span>FarGone</span><span>E</span>
+    </a>
+
+    <a href="/uz/index.html" class="nav-link lang-switch">🇺🇿 Uzbek</a>
+
+    <button class="menu-toggle" aria-label="Open menu">
+      ☰
+    </button>
+
+    <div class="nav-links">
+      <a href="#problem" class="nav-link">Problem</a>
+      <a href="#solution" class="nav-link">Solution</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#why" class="nav-link">Why Us?</a>
+      <a href="#consultation" class="btn btn-primary">Start Audit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="drawer">
+  <button class="drawer-close" aria-label="Close menu">×</button>
+  <a href="#problem">Problem</a>
+  <a href="#solution">Solution</a>
+  <a href="#process">Process</a>
+  <a href="#why">Why Us?</a>
+</div>
+
+<div class="drawer-backdrop"></div>
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -339,11 +359,12 @@
       </div>
     </footer>
 
-    <script src="shared/modalStyles.css" defer></script>
-    <script src="shared/scrollAnimations.js" defer></script>
-    <script src="shared/detect_language.js" defer></script>
-    <script src="shared/domain_text_rotator.js" defer></script>
-    <script src="shared/animated_background.js" defer></script>
-    <script src="shared/modal.js" defer></script>
+    
+    <script src="shared/js/drawer.js" defer></script>
+    <script src="shared/js/scrollAnimations.js" defer></script>
+    <script src="shared/js/detect_language.js" defer></script>
+    <script src="shared/js/domain_text_rotator.js" defer></script>
+    <script src="shared/js/modal.js" defer></script>
+    <script src="shared/js/animated_background.js" defer></script>
   </body>
 </html>
