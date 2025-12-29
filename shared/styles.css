@@ -211,6 +211,9 @@ section {
   align-items: center;
   gap: 2rem;
 }
+.nav-links a.btn {
+  margin-top: 0;
+}
 
 @media (max-width: 768px) {
   .nav-links {
@@ -364,7 +367,7 @@ section {
   align-items: center;
 }
 .hero-cta a.btn {
-    margin: 0;
+  margin: 0;
   height: min-content;
 }
 
