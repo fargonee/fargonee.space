@@ -361,6 +361,11 @@ section {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+}
+.hero-cta a.btn {
+    margin: 0;
+  height: min-content;
 }
 
 /* Branches*/
